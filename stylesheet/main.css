@@ -5,6 +5,7 @@ div {
 }
 p {
     font-family: "Arial", Arial, Helvetica, sans-serif;
+    text-align: center;
   }
 
 p.normal {
