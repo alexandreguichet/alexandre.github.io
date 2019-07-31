@@ -1,3 +1,18 @@
 div {
   background-color: lightblue;
 }
+p {
+    font-family: "Arial", Arial, Helvetica, sans-serif;
+  }
+
+p.normal {
+    font-style: normal;
+  }
+  
+p.italic {
+    font-style: italic;
+  }
+  
+p.oblique {
+    font-style: oblique;
+  }
