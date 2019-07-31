@@ -7,7 +7,8 @@ body{
 div{
     padding: 50px;
 }
-.core{
+div.core{
     border-style: groove;
-    border: 3px; 
+    border: 10px; 
+    background-color: aliceblue;
 }
