@@ -1,5 +1,6 @@
 div {
   background-color: lightblue;
+  border-style: groove;
 }
 p {
     font-family: "Arial", Arial, Helvetica, sans-serif;
