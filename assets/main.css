@@ -8,7 +8,7 @@ div{
     padding: 50px;
 }
 div.core{
-    border-style: solid;
+    border-style: groove;
     border: 10px; 
     background-color: aliceblue;
 }
