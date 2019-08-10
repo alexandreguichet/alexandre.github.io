@@ -45,13 +45,13 @@
                                         link.href = refs[index];
                                         if (index < 1) {
                                                 index++;
-                                                $(".bottom").removeClass("fadein")
-                                                $(".bottom").addClass("fadeout")
+                                                $(".top fadein").removeClass("fadein")
+                                                $(".top").addClass("fadeout")
                                         }
                                         else {
                                                 index = 0;
-                                                $(".bottom").removeClass("fadeout")
-                                                $(".bottom").addClass("fadein")
+                                                $(".top fadeout").removeClass("fadeout")
+                                                $(".top").addClass("fadein")
                                         }
                                         console.log("here with the link " + link);
                                         setTimeout(ChangeLink, 5000);
