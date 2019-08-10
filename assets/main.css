@@ -139,14 +139,12 @@ image-1029 {
   animation-timing-function: ease-in-out;
 }
 #fade img.fadein {
-  animation-name: fadein;
-  animation-duration: 5s;
+  animation: fadein 5s;
   animation-delay: 0s;
 }
 #fade img.fadeout 
 {
-  animation-name: fadein;
-  animation-duration: 5s;
+  animation: fadeout 5s;
   animation-delay: 0s;
 }
 
