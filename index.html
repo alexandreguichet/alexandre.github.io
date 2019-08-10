@@ -37,7 +37,10 @@
                                         ></a>
                         <script>
                                 var index = 1;
-
+function reset_animation(){
+        document.getElementById("imageToChange").style.animation = 'none';
+        document.getElementById("imageToChange").style.animation = null;
+}
                                 function ChangeLink() {
                                         var link = document.querySelector('.changing_link');
                                         var refs = ["https://alexandreguichet.itch.io/level", "https://github.com/keeganland/the-arena-agda"];
@@ -57,6 +60,7 @@
                                         }
 
                                         console.log("here with the link " + link);
+                                        reset_animation();
                                         setTimeout(ChangeLink, 5000);
                                 }
                                 ChangeLink();
