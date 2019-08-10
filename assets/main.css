@@ -2,12 +2,11 @@
 
 div{
     width: 100%;
-    background-color: aliceblue;
-    padding: 50px;
 }
 .body{
   border: 2px; 
   border-style: solid;
+  background-color: aliceblue;
 }
 .core{
   padding: 50px;
