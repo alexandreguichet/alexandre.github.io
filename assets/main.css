@@ -1,5 +1,4 @@
 @import "bootstrap.css";
-
 div {
   width: 100%;
 }
@@ -54,6 +53,13 @@ iframe.video {
   border: 1px solid black;
   float: left;
   margin: 10px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.button-alex:hover, .button-alex:focus {
+  color: #afaeae;
+  text-decoration: underline;
 }
 
 .button-slider {
