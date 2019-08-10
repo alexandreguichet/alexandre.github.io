@@ -14,9 +14,6 @@ function showSlides() {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
-
-  console.log(dots);
-  
   dots[slideIndex-1].className += " active";
 
   setTimeout(showSlides, imageDuration); // Change image every 5 seconds
