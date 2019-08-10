@@ -33,7 +33,7 @@
                         <a class="changing_link" href="">
                                 <img class="bottom" src="assets/images/Video Game Projects/Level-Website copy.jpg"
                                         style="width:100%">
-                                <img class="top" src="assets/images/Video Game Projects/TheArena-Website.jpg"
+                                <img class="top fadeout" src="assets/images/Video Game Projects/TheArena-Website.jpg"
                                         style="width:100%"></a>
                         <script>
                                 var index = 1;
@@ -43,8 +43,12 @@
                                         var refs = ["https://alexandreguichet.itch.io/level", "https://github.com/keeganland/the-arena-agda"];
 
                                         link.href = refs[index];
-                                        if (index < 1) { index++; }
-                                        else { index = 0; }
+                                        if (index < 1) { index++;
+                                        $("top").removeClass("fadein")
+                                        $("top").addClass("fadeout")}
+                                        else { index = 0;
+                                                $("top").removeClass("fadeout")
+                                        $("top").addClass("fadein") }
                                         console.log("here with the link " + link);
                                         setTimeout(ChangeLink, 5000);
                                 }

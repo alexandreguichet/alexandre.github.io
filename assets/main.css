@@ -136,14 +136,19 @@ image-1029 {
 }
 
 #fade img.top {
-  animation-name: fade;
-  animation-duration: 5s;
   animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+}
+#fade img.fadein {
+  animation-name: fadein;
+  animation-duration: 5s;
+}
+#fade img.fadeout 
+{
+  animation-name: fadein;
+  animation-duration: 5s;
 }
 
-@keyframes fade {
+@keyframes fadeout{
   0% {
     opacity: 1;
   }
@@ -155,6 +160,21 @@ image-1029 {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes fadein{
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
