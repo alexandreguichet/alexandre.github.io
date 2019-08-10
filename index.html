@@ -33,7 +33,7 @@
                         <a class="changing_link" href="">
                                 <img class="bottom" src="assets/images/Video Game Projects/Level-Website copy.jpg"
                                         style="width:100%">
-                                <img id="imageToChange" class="top fadeout" src="assets/images/Video Game Projects/TheArena-Website.jpg"
+                                <img id="imageToChange" class="top" src="assets/images/Video Game Projects/TheArena-Website.jpg"
                                         ></a>
                         <script>
                                 var index = 1;
@@ -45,14 +45,17 @@
                                         link.href = refs[index];
                                         if (index < 1) {
                                                 index++;
-                                                $("#imageToChange").removeClass("fadein")
-                                                $("#imageToChange").addClass("fadeout")
+                                                if ( document.getElementById("imageToChange").classList.contains('fadein'))
+                                                        document.getElementById("imageToChange").classList.remove('fadein');
+                                                document.getElementById("imageToChange").classList.add('fadeout');                    
                                         }
                                         else {
                                                 index = 0;
-                                                $("#imageToChange").removeClass("fadeout")
-                                                $("#imageToChange").addClass("fadein")
+                                                if ( document.getElementById("imageToChange").classList.contains('fadeout'))
+                                                        document.getElementById("imageToChange").classList.remove('fadeout');
+                                                document.getElementById("imageToChange").classList.add('fadein');             
                                         }
+
                                         console.log("here with the link " + link);
                                         setTimeout(ChangeLink, 5000);
                                 }
