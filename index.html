@@ -30,10 +30,28 @@
         <!-- Slideshow container -->
         <div class="core">
                 <div id="fade">
-                        <a href="https://alexandreguichet.itch.io/level">
-                        <img class="bottom" src="assets/images/Video Game Projects/Level-Website copy.jpg" style="width:100%"></a>
+                        <a class="changing_link" href="https://alexandreguichet.itch.io/level">
+                                <img class="bottom" src="assets/images/Video Game Projects/Level-Website copy.jpg"
+                                        style="width:100%"></a>
                         <a href="https://github.com/keeganland/the-arena-agda">
-                        <img class="top" src="assets/images/Video Game Projects/TheArena-Website.jpg" style="width:100%"></a>
+                                <img class="top" src="assets/images/Video Game Projects/TheArena-Website.jpg"
+                                        style="width:100%"></a>
+                        <script>
+                                var index = 0;
+
+                                function ChangeLink() {
+                                        var link = document.getElementsByClassName(".changing_link");
+                                        var links = ("https://alexandreguichet.itch.io/level", "https://github.com/keeganland/the-arena-agda");
+
+                                        link.href = links(index);
+                                        if (index < 2) { index++; }
+                                        else { index = 0; }
+
+                                        setTimeout(showSlides, 5000);
+                                }
+                                
+                                ChangeLink();
+                        </script>
                 </div>
         </div>
 
