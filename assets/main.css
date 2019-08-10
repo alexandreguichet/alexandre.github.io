@@ -20,7 +20,8 @@ div {
 .header {
   padding: 60px;
   text-align: center;
-  font-size: 30px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .videoContainer {
