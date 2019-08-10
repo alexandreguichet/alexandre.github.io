@@ -1,4 +1,4 @@
-var slideIndex = 1;
+var slideIndex = 0;
 var imageDuration = 5000;
 
 function showSlides() {
@@ -20,7 +20,7 @@ function showSlides() {
 }
 
 function plusSlides(n) {
-  console.log("here");
+  console.log("I am trying to move from slides to slides with " + n);
   slideIndex += n;
   showSlides();
 }
