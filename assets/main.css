@@ -2,24 +2,21 @@
 
 div{
     padding: 50px;
-    border: 10px; 
+    border: 2px; 
     width: 100%;
 }
 .core{
     border-style: solid;
     background-color: aliceblue;
 }
-.videoContainer
-{
+.videoContainer{
   position:absolute;
   height:100%;
   overflow: hidden;
   padding-top:56.25%;
 }
 
-iframe.video
-{
-  position:absolute;
+iframe.video{
   width:92.5%;
   height:100%;
 }
