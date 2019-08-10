@@ -6,33 +6,24 @@ body{
 
 div{
     padding: 50px;
+    border: 10px; 
+    width: 100%;
 }
 .core{
     border-style: solid;
-    border: 10px; 
     background-color: aliceblue;
-    width: 100%;
 }
 .videoContainer
 {
-  position:relative;
+  position:absolute;
   height:100%;
-  width:100%;
   overflow: hidden;
   padding-top:56.25%;
-}
-
-.videoContainer video
-{
-  min-width: 100%;
-  min-height: 100%;
 }
 
 iframe.video
 {
   position:absolute;
-  top:0;
-  left:0;
-  width:100%;
+  width:90%;
   height:100%;
 }
