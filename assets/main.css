@@ -141,11 +141,13 @@ image-1029 {
 #fade img.fadein {
   animation-name: fadein;
   animation-duration: 5s;
+  animation-delay: 0s;
 }
 #fade img.fadeout 
 {
   animation-name: fadein;
   animation-duration: 5s;
+  animation-delay: 0s;
 }
 
 #imageToChange{
