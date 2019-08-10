@@ -1,9 +1,5 @@
 @import "bootstrap.css";
 
-body{
-  font-size: 15px;
-}
-
 div{
     padding: 50px;
     border: 10px; 
@@ -24,6 +20,6 @@ div{
 iframe.video
 {
   position:absolute;
-  width:90%;
+  width:92.5%;
   height:100%;
 }
