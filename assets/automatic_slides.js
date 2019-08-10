@@ -20,6 +20,7 @@ function showSlides() {
 }
 
 function plusSlides(n) {
+  console.log("here");
   slideIndex += n;
   showSlides();
 }
