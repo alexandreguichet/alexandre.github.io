@@ -148,6 +148,10 @@ image-1029 {
   animation-duration: 5s;
 }
 
+#imageToChange{
+  width:100%;
+}
+
 @keyframes fadeout{
   0% {
     opacity: 1;
