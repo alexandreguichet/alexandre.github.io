@@ -137,7 +137,7 @@ image-1029 {
 
 #fade img.top {
   animation-name: fade;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -145,9 +145,6 @@ image-1029 {
 
 @keyframes fade {
   0% {
-    opacity: 1;
-  }
-  20% {
     opacity: 1;
   }
   45% {
