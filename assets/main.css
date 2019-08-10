@@ -5,10 +5,11 @@ div{
     width: 100%;
     background-color: aliceblue;
 }
-body{
+.core{
   border: 2px; 
   border-style: solid;
 }
+
 .videoContainer{
   position:absolute;
   height:100%;
