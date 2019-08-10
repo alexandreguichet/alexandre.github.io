@@ -73,10 +73,11 @@ iframe.video {
 .divSeparation {
   border-radius: 4px;
   padding: 20px 20px 20px 20px;
-  margin-bottom: 30px;
+  margin: auto;
   -webkit-box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
   box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  max-width: 1440px;
 }
 
 .site-footer {
