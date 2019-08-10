@@ -33,7 +33,7 @@
                         <a class="changing_link" href="">
                                 <img class="bottom" src="assets/images/Video Game Projects/Level-Website copy.jpg"
                                         style="width:100%">
-                                <img class="top fadeout" src="assets/images/Video Game Projects/TheArena-Website.jpg"
+                                <img id="imageToChange" class="top fadeout" src="assets/images/Video Game Projects/TheArena-Website.jpg"
                                         style="width:100%"></a>
                         <script>
                                 var index = 1;
@@ -45,13 +45,13 @@
                                         link.href = refs[index];
                                         if (index < 1) {
                                                 index++;
-                                                $(".top fadein").removeClass("fadein")
-                                                $(".top").addClass("fadeout")
+                                                $("#imageToChange").removeClass("fadein")
+                                                $("#imageToChange").addClass("fadeout")
                                         }
                                         else {
                                                 index = 0;
-                                                $(".top fadeout").removeClass("fadeout")
-                                                $(".top").addClass("fadein")
+                                                $("#imageToChange").removeClass("fadeout")
+                                                $("#imageToChange").addClass("fadein")
                                         }
                                         console.log("here with the link " + link);
                                         setTimeout(ChangeLink, 5000);
