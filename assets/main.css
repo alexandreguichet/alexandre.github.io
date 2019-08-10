@@ -1,31 +1,116 @@
 @import "bootstrap.css";
 
-div{
-    width: 100%;
+div {
+  width: 100%;
 }
-.body{
-  border: 2px; 
+
+.body {
+  border: 2px;
   border-style: solid;
   background-color: aliceblue;
 }
-.core{
+
+.core {
   padding: 50px;
 }
-.img{
+
+.img {
   padding: 30px 0px;
 }
-.videoContainer{
-  position: relative;;
-  height:100%;
+
+.videoContainer {
+  position: relative;
+  ;
+  height: 100%;
   width: 100%;
   padding-top: 56.25%;
   overflow: hidden;
 }
 
-iframe.video{
+iframe.video {
   position: absolute;
   top: 0;
   left: 0;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin-bottom: 0.1em;
+  margin-left: 20px;
+}
+
+h2 {
+  margin-bottom: 0.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", sans-serif;
+}
+
+.comments-closed {
+  display: none;
+}
+
+.wp-caption {
+  margin-top: 0;
+}
+
+.button-alex {
+  padding: 20px;
+  border: 1px solid black;
+  float: left;
+  margin: 10px;
+}
+
+.button-slider {
+  width: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  margin-top: 100%
+}
+
+.divSeparation {
+  border-radius: 4px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.site-footer {
+  border-radius: 4px 4px 0px 0px;
+}
+
+.featured-image, .slider-110, .wp-image-148 {
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+}
+
+.metaslider_container_110 {
+  margin-bottom: 20px;
+}
+
+image-1029 {
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+}
+
+.post-content {
+  padding: 0 5% !important;
+}
+
+.center-button {
+  width: 50%;
+  margin: 0;
+  display: block;
+  float: left;
 }
