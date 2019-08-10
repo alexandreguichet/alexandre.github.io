@@ -40,9 +40,9 @@
 
                                 function ChangeLink() {
                                         var link = document.getElementsByClassName(".changing_link");
-                                        var links = ("https://alexandreguichet.itch.io/level", "https://github.com/keeganland/the-arena-agda");
+                                        var refs = ["https://alexandreguichet.itch.io/level", "https://github.com/keeganland/the-arena-agda"];
 
-                                        link.href = links(index);
+                                        link.href = refs[index];
                                         if (index < 2) { index++; }
                                         else { index = 0; }
 
