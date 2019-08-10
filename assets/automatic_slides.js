@@ -20,9 +20,11 @@ function showSlides() {
 }
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  slideIndex += n;
+  showSlides();
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  slideIndex = n;
+  showSlides();
 }
