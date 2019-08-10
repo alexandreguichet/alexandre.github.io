@@ -5,14 +5,17 @@ div{
     background-color: aliceblue;
     padding: 50px;
 }
-.core{
+.body{
   border: 2px; 
   border-style: solid;
 }
-.img{
-  padding: 30px 0px !important;
+.core{
+  padding: 50px;
 }
-.videoContainer{
+.img{
+  padding: 30px 0px;
+}
+.core.videoContainer{
   position: relative;;
   height:100%;
   width: 100%;
