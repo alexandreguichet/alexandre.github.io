@@ -1,4 +1,4 @@
-var slideIndex = 0;
+var slideIndex = 1;
 var imageDuration = 5000;
 
 function showSlides() {
