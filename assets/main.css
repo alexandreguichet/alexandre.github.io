@@ -137,7 +137,7 @@ image-1029 {
 
 #fade img.top {
   animation-name: fade;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -156,4 +156,20 @@ image-1029 {
   100% {
     opacity: 0;
   }
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
