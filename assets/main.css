@@ -11,13 +11,17 @@ div{
 }
 
 .videoContainer{
-  position:absolute;
+  position: relative;;
   height:100%;
+  width: 100%;
+  padding-top: 56.25%;
   overflow: hidden;
 }
 
 iframe.video{
   position: absolute;
-  width:92.5%;
+  top: 0;
+  left: 0;
+  width:100%;
   height:100%;
 }
