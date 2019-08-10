@@ -11,6 +11,7 @@ div.core{
     border-style: solid;
     border: 10px; 
     background-color: aliceblue;
+    width: 100%;
 }
 
 .videoContainer
