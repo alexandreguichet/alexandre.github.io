@@ -35,19 +35,6 @@ iframe.video {
   height: 100%;
 }
 
-h1 {
-  margin-bottom: 0.1em;
-  margin-left: 20px;
-}
-
-h2 {
-  margin-bottom: 0.1em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica", sans-serif;
-}
-
 .comments-closed {
   display: none;
 }
