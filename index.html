@@ -43,12 +43,16 @@
                                         var refs = ["https://alexandreguichet.itch.io/level", "https://github.com/keeganland/the-arena-agda"];
 
                                         link.href = refs[index];
-                                        if (index < 1) { index++;
-                                        $("top").removeClass("fadein")
-                                        $("top").addClass("fadeout")}
-                                        else { index = 0;
-                                                $("top").removeClass("fadeout")
-                                        $("top").addClass("fadein") }
+                                        if (index < 1) {
+                                                index++;
+                                                $(".top").removeClass("fadein")
+                                                $(".top").addClass("fadeout")
+                                        }
+                                        else {
+                                                index = 0;
+                                                $(".top").removeClass("fadeout")
+                                                $(".top").addClass("fadein")
+                                        }
                                         console.log("here with the link " + link);
                                         setTimeout(ChangeLink, 5000);
                                 }
