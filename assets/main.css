@@ -13,10 +13,10 @@ div{
   position:absolute;
   height:100%;
   overflow: hidden;
-  padding-top:56.25%;
 }
 
 iframe.video{
+  position: absolute;
   width:92.5%;
   height:100%;
 }
