@@ -20,10 +20,13 @@ div {
 .header {
   padding: 60px;
   text-align: center;
+}
+
+.nav{
+  padding-left: 10px;
   max-width: 1440px;
   margin: auto;
 }
-
 .videoContainer {
   position: relative;
   ;
