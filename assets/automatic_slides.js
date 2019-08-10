@@ -1,5 +1,5 @@
 var slideIndex = 1;
-var imageDuration = 7000;
+var imageDuration = 5000;
 
 function showSlides() {
   var i;
