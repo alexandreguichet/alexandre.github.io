@@ -214,9 +214,7 @@ th {
   img {
     page-break-inside: avoid;
   }
-  img {
-    max-width: 100% !important;
-  }
+
   p,
   h2,
   h3 {
@@ -300,8 +298,11 @@ a:focus {
 figure {
   margin: 0;
 }
+
 img {
+  max-width: 100% !important;
   vertical-align: middle;
+  image-rendering: auto;
 }
 .img-responsive,
 .thumbnail > img,
