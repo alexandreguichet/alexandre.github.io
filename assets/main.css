@@ -205,3 +205,14 @@ image-1029 {
 .active, .dot:hover {
   background-color: #717171;
 }
+
+.main-container {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+.fixer-container {
+  float: left;
+  position: relative;
+  left: -50%;
+}
