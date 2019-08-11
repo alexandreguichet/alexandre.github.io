@@ -30,44 +30,52 @@
         <!-- Slideshow container - Please do not open this container-->
         <div>
                 <!-- Once Again you should not open this container... -->
-                <div id="fade">
-                        <a class="changing_link" href="">
-                                <img class="bottom" src="assets/images/Video Game Projects/Level-Website copy.jpg"
-                                        style="width:100%">
-                                <img id="imageToChange" class="top"
-                                        src="assets/images/Video Game Projects/TheArena-Website.jpg"></a>
-                        <!-- no, no, no, no... don't look-->               
-                        <script>
-                                //Noooooooooooooooooooooooooooooo
-                                var index = 1;
-                                function reset_animation() {
-                                        document.getElementById("imageToChange").style.animation = 'none';
-                                        document.getElementById("imageToChange").style.animation = null;
-                                }
-                                function ChangeLink() {
-                                        var link = document.querySelector('.changing_link');
-                                        var refs = ["https://alexandreguichet.itch.io/level", "https://github.com/keeganland/the-arena-agda"];
+                <div>
+                        <!-- I really don't want you to see what's inside... -->
+                        <div>
+                                <!-- Please... -->
+                                <div id="fade" class="featured-image">
+                                        <a class="changing_link" href="">
+                                                <img class="bottom"
+                                                        src="assets/images/Video Game Projects/Level-Website copy.jpg"
+                                                        style="width:100%">
+                                                <img id="imageToChange" class="top"
+                                                        src="assets/images/Video Game Projects/TheArena-Website.jpg">
+                                        </a>
+                                        <!-- No, no, no, no... don't look-->
+                                        <script>
+                                                //Noooooooooooooooooooooooooooooo
+                                                var index = 1;
+                                                function reset_animation() {
+                                                        document.getElementById("imageToChange").style.animation = 'none';
+                                                        document.getElementById("imageToChange").style.animation = null;
+                                                }
+                                                function ChangeLink() {
+                                                        var link = document.querySelector('.changing_link');
+                                                        var refs = ["https://alexandreguichet.itch.io/level", "https://github.com/keeganland/the-arena-agda"];
 
-                                        link.href = refs[index];
-                                        if (index < 1) {
-                                                index++;
-                                                if (document.getElementById("imageToChange").classList.contains('fadein'))
-                                                        document.getElementById("imageToChange").classList.remove('fadein');
-                                                document.getElementById("imageToChange").classList.add('fadeout');
-                                        }
-                                        else {
-                                                index = 0;
-                                                if (document.getElementById("imageToChange").classList.contains('fadeout'))
-                                                        document.getElementById("imageToChange").classList.remove('fadeout');
-                                                document.getElementById("imageToChange").classList.add('fadein');
-                                        }
+                                                        link.href = refs[index];
+                                                        if (index < 1) {
+                                                                index++;
+                                                                if (document.getElementById("imageToChange").classList.contains('fadein'))
+                                                                        document.getElementById("imageToChange").classList.remove('fadein');
+                                                                document.getElementById("imageToChange").classList.add('fadeout');
+                                                        }
+                                                        else {
+                                                                index = 0;
+                                                                if (document.getElementById("imageToChange").classList.contains('fadeout'))
+                                                                        document.getElementById("imageToChange").classList.remove('fadeout');
+                                                                document.getElementById("imageToChange").classList.add('fadein');
+                                                        }
 
-                                        console.log("here with the link " + link);
-                                        reset_animation();
-                                        setTimeout(ChangeLink, 5000);
-                                }
-                                ChangeLink();
-                        </script>
+                                                        console.log("here with the link " + link);
+                                                        reset_animation();
+                                                        setTimeout(ChangeLink, 5000);
+                                                }
+                                                ChangeLink();
+                                        </script>
+                                </div>
+                        </div>
                 </div>
         </div>
 
