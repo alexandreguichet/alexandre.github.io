@@ -108,7 +108,9 @@ image-1029 {
 .post-content {
   padding: 0 5% !important;
 }
-
+.post-title{
+  font-size: 60px;
+}
 .center-button {
   width: 50%;
   margin: 0;
