@@ -131,6 +131,10 @@ image-1029 {
   transition: opacity 1s ease-in-out;
 }
 
+#fade img:first-child{
+  position:static;
+}
+
 #fade img.transparant {
   opacity: 0;
 }
