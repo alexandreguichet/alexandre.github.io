@@ -5841,6 +5841,7 @@ legend {
   content: " ";
   display: table;
 }
+.clearfix,
 .clearfix:after,
 .container:after,
 .container-fluid:after,
