@@ -3000,9 +3000,7 @@ input[type="button"].btn-block {
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
-.dropdown {
-  position: relative;
-}
+
 .dropdown-toggle:focus {
   outline: 0;
 }
@@ -3640,7 +3638,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
 }
 .navbar {
-  position: relative;
+  /*position: relative;*/
   min-height: 50px;
   margin-bottom: 22px;
   border: 1px solid transparent;
