@@ -218,7 +218,7 @@ iframe.video {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: white;
+  width: auto !important;
 }
 
 /* Links inside the navbar */
