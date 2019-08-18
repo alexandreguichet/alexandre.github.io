@@ -230,12 +230,6 @@ iframe.video {
   text-decoration: none;
 }
 
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
 /* Dropdown menu */
 .dropdown {
   float: left;
