@@ -12,25 +12,22 @@
 
 <body>
         <!-- Align padding of .ul to .core css-->
-        <nav class="navbar">
-                <div class="collapse navbar-collapse navbar-nav" id="navbarNavDropdown">
-                        <a class="nav-item  nav-link button-alex" href="./" rel="internal">Home</a>
-                        <a class="nav-item  nav-link button-alex" href="pages/ubc-bosch-guide" rel="internal">UBC
-                                Interns
-                                Bosch
-                                Guide</a>
-                        <a class="nav-item nav-link dropdown">
-                                <a class="nav-link dropdown-toggle button-alex" href="#" id="navbarDropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Personal Projects
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">The Arena</a>
-                                        <a class="dropdown-item" href="pages/personal-project-level">Level</a>
-                                </div>
-                        </a>
+        <div class="navbar">
+                <a class="button-alex" href="./" rel="internal">Home</a>
+                <a class="button-alex" href="pages/ubc-bosch-guide" rel="internal">UBC
+                        Interns
+                        Bosch
+                        Guide</a>
+                <div class="dropdown">
+                        <button class="dropbtn">Personal Projects
+                                <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                                <a href="#">The Arena</a>
+                                <a href="pages/personal-project-level">Level</a>
+                        </div>
                 </div>
-        </nav>
+        </div>
 
         <div class="header">
                 <h1 style="font-size: 60px;">Alexandre Guichet</h1>
