@@ -219,6 +219,8 @@ iframe.video {
 .navbar {
   overflow: hidden;
   width: auto !important;
+  max-width: 1440px;
+  margin:auto;
 }
 
 /* Links inside the navbar */
@@ -251,7 +253,7 @@ iframe.video {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: auto;
+  min-width: 179px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   margin-left: -20px;
