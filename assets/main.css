@@ -92,6 +92,8 @@ iframe.video {
   -webkit-box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
   box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  max-width: 1440px;
+  margin: auto;
 }
 
 .metaslider_container_110 {
