@@ -55,6 +55,7 @@ iframe.video {
   margin: 10px;
   color: #333333;
   text-decoration: none;
+  max-height: 64px;
 }
 
 .button-alex:hover, .button-alex:focus {
