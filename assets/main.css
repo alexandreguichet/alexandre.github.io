@@ -280,3 +280,12 @@ iframe.video {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.wp-caption-text{
+  margin: 0 0 1.84502em;
+  font-size:0.75em;
+  line-height: 1.5;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
