@@ -298,6 +298,7 @@ a:focus {
 
 figure {
   margin: auto;
+  display:grid;
 }
 
 img {
