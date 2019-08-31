@@ -289,3 +289,9 @@ iframe.video {
   box-sizing: border-box;
   text-align: center;
 }
+
+.content-column{
+  margin:auto; 
+  display: grid; 
+  max-width: 90% !important;
+}
