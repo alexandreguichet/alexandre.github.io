@@ -295,3 +295,7 @@ iframe.video {
   display: grid; 
   max-width: 90% !important;
 }
+
+.content-img{
+  border: 1px solid black;
+}
