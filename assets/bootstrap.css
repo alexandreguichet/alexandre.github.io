@@ -471,6 +471,9 @@ p {
 .row>p{
   padding: 0 15px;
 }
+.col-md-6>p{
+  padding: 0 0px;
+}
 .lead {
   margin-bottom: 22px;
   font-size: 18px;
