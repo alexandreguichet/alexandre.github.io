@@ -465,7 +465,8 @@ h6,
   font-size: 14px;
 }
 p {
-  margin: 0 0 30px;
+  margin: 0 0 11px;
+  padding: 0 30px;
 }
 .lead {
   margin-bottom: 22px;
