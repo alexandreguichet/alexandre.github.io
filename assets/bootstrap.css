@@ -479,7 +479,7 @@ p {
 .row>p{
   padding: 0 15px;
 }
-.col-md-6>p{
+.col-md-6> p{
   padding: 0 0px;
 }
 .lead {
