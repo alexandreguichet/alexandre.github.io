@@ -464,20 +464,20 @@ h6,
 .h6 {
   font-size: 14px;
 }
-.row>h1, .h1, 
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+.row>h1, .row>.h1, 
+.row>h2, .row>.h2,
+.row>h3, .row>.h3,
+.row>h4, .row>.h4,
+.row>h5, .row>.h5,
+.row>h6, .row>.h6 {
   padding:0 15px;
 }
-.col-md-6>h1, .h1, 
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+.col-md-6>h1, .col-md-6>.h1, 
+.col-md-6>h2, .col-md-6>.h2,
+.col-md-6>h3, .col-md-6>.h3,
+.col-md-6>h4, .col-md-6>.h4,
+.col-md-6>h5, .col-md-6>.h5,
+.col-md-6>h6, .col-md-6>.h6 {
   padding:0 0px;
 }
 p {
