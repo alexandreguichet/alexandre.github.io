@@ -299,6 +299,7 @@ iframe.video {
 .content-img{
   border: 1px solid black;
   margin:auto;
+  max-height: 500px;
 }
 
 .table-of-content
