@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Alexandre Guichet</title>
+
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="assets/main.css">
+</head>
+
+
+<body>
+        <!-- Align padding of .ul to .core css-->
+        <div class="navbar">
+                <a class="button-alex" href="./" rel="internal">Home</a>
+                <a class="button-alex" href="pages/ubc-bosch-guide" rel="internal">UBC
+                        Interns
+                        Bosch
+                        Guide</a>
+                <div href="#" class="dropdown button-alex">
+                        <button class="dropbtn">Personal Projects
+                                <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div href="#" class="dropdown-content">
+                                <a href="#">The Arena</a>
+                                <a href="pages/personal-project-level">Level</a>
+                        </div>
+                </div>
+        </div>
+
+        <div class="header">
+                <h1 style="font-size: 60px;">Alexandre Guichet</h1>
+                <h2>My Video Game and Level Design Portfolio</h2>
+        </div>
+
+        <!-- Slideshow container - Please do not open this container-->
+        <div>
+                <!-- Once Again you should not open this container... -->
+                <div>
+                        <!-- I really don't want you to see what's inside... -->
+                        <div>
+                                <!-- Please... -->
+                                <div id="fade" class="featured-image">
+                                        <a class="changing_link" href="">
+                                                <img class="bottom"
+                                                        src="assets/images/Video Game Projects/Level-Website copy.jpg"
+                                                        style="width:100%">
+                                                <img id="imageToChange" class="top"
+                                                        src="assets/images/Video Game Projects/TheArena-Website.jpg">
+                                        </a>
+                                        <!-- No, no, no, no... don't look-->
+                                        <script>
+                                                //Noooooooooooooooooooooooooooooo
+                                                var index = 1;
+                                                function reset_animation() {
+                                                        document.getElementById("imageToChange").style.animation = 'none';
+                                                        document.getElementById("imageToChange").style.animation = null;
+                                                }
+                                                function ChangeLink() {
+                                                        var link = document.querySelector('.changing_link');
+                                                        var refs = ["https://alexandreguichet.itch.io/level", "https://github.com/keeganland/the-arena-agda"];
+
+                                                        link.href = refs[index];
+                                                        if (index < 1) {
+                                                                index++;
+                                                                if (document.getElementById("imageToChange").classList.contains('fadein'))
+                                                                        document.getElementById("imageToChange").classList.remove('fadein');
+                                                                document.getElementById("imageToChange").classList.add('fadeout');
+                                                        }
+                                                        else {
+                                                                index = 0;
+                                                                if (document.getElementById("imageToChange").classList.contains('fadeout'))
+                                                                        document.getElementById("imageToChange").classList.remove('fadeout');
+                                                                document.getElementById("imageToChange").classList.add('fadein');
+                                                        }
+
+                                                        reset_animation();
+                                                        setTimeout(ChangeLink, 5000);
+                                                }
+                                                ChangeLink();
+                                        </script>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="core" style="padding-top: 50px;">
+                <div class="divSeparation" style="background-image: linear-gradient(to left bottom, 
+                                #ffffff, #fcfcfc,#f8f8f8, #f5f5f5, #f2f2f2);">
+                        <div class="row">
+                                <div class="col-md-6">
+                                        <h1 class="post-title"> Introduction</h1>
+                                        <p>
+                                                I wish to work as Level Designer for video games one day! <br /><br />
+                                                I am currently a Fourth year Engineering Student at the University of
+                                                British
+                                                Columbia (UBC).
+                                                <br /><br />
+                                                This website presents my journey as Level Designer and Game Designer
+                                                with Unity
+                                                (mostly).
+                                                <br /><br />
+                                                Currently: I am an intern for Bosch (Renningen) for whom I implement and
+                                                apply
+                                                machine learning algorithms for feature selection
+                                                in a supervised Neural Networks. I am designing a Feature Selection
+                                                framework in Python, am creating functions in
+                                                Matlab, and sometime am losing my time creating tools in VBA (because I
+                                                like microsoft word and use it for documentation...).
+                                                <br /><br />
+                                                I am designing this website, making (and playing) video games, and
+                                                producing music on my freetime!
+                                        </p>
+                                </div>
+                                <div class="col-md-6" style="margin:auto; display: grid; max-width: 90% !important;">
+                                        <!--Ain't I handsome...?-->
+                                        <img class="featured-image" style="max-height: 550px;"
+                                                src="assets/images/Video Game Projects/Screen-Shot-2016-12-17-at-10.15.01.png">
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="core" style="padding-top: 50px;">
+                <div class="divSeparation" style="background-image: linear-gradient(to left bottom, 
+                                       #ffeecc, #ffe9bc, #ffe4ac, #ffde9c, #ffd98c);">
+                        <div class="row">
+                                <h1 class="post-title" style="padding-left: 15px"> Personal Project: The Arena</h1>
+                                <div class="col-md-6" style="margin:auto; display: grid; max-width: 90% !important;">
+
+                                        <img class="featured-image"
+                                                src="assets/images/Video Game Projects/Screen Shot 2018-07-20 at 14.14.18.png">
+                                </div>
+                                <div class="col-md-6 main-container">
+                                        <h2>Level Design</h2>
+                                        <p>
+                                                The Arena is a 2D top-down RPG. Beside being still in development, we
+                                                aim this game
+                                                to be a succession of different level with their own mechanics. The
+                                                first Floor is nearly done.
+                                                <h2>Game Design</h2>
+                                                The Player controls two characters that have different abilities. The
+                                                player has to use a combination
+                                                of both characters' skills to solve puzzles and defeat enemies.
+                                        </p>
+                                        <div class="fixer-container" style="left:-50px !important;">
+                                                <ul class="navbar">
+                                                        <a class="button-alex" href="none_yet"><u>Read more</u></a>
+                                                        <a class="button-alex"
+                                                                href="https://github.com/keeganland/the-arena-agda"><u>Github</u></a>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="core" style="padding-top: 50px;">
+                <div class="divSeparation" style="background-image: linear-gradient(to right bottom, 
+                                               #ffddcc, #ffceb5, #ffbf9e, #ffb089, #ffa173);">
+                        <div class="row">
+                                <h1 class="post-title" style="padding-left: 15px"> Personal Project: Level</h1>
+                                <div class="col-md-6 main-container">
+                                        <h2>Level Design</h2>
+                                        <p>
+                                                Level is a puzzle game where the player move a ball by tilting the
+                                                environment.
+                                                The levels are designed to introduce a new gameplay mechanic with a
+                                                unique puzzle each time.
+                                                <h2>Game Design</h2>
+                                                The Player controls the plane in which the ball is with "aswd" keys or
+                                                arrows. The ball can jump
+                                                and protect itself against enemies. The goal is to make it through the
+                                                Levels to collect tokens that will unlock the next level.
+                                        </p>
+                                        <div class="fixer-container" style="left:-50px !important;">
+                                                <ul class="navbar">
+                                                        <a class="button-alex"
+                                                                href="pages/personal-project-level"><u>Read more</u></a>
+                                                        <a class="button-alex"
+                                                                href="https://alexandreguichet.itch.io/level"><u>Play!</u></a>
+                                                        <a class="button-alex"
+                                                                href="https://github.com/alexandreguichet/Level-Unity-CSharp"><u>Github</u></a>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="col-md-6" style="margin:auto; display: grid; max-width: 90% !important;">
+
+                                        <img class="featured-image"
+                                                src="assets/images/Video Game Projects/Screen Shot 2018-07-23 at 19.52.05.png">
+                                </div>
+                        </div>
+                </div>
+        </div>
+</body>
+
+</html>

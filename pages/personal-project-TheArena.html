@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Personal Project: The Arena</title>
+
+        <!-- Custom CSS -->
+
+        <link type="text/css" rel="stylesheet" href="../assets/main.css">
+</head>
+
+<body>
+        <div class="core">
+                <div class="navbar">
+                        <a class="button-alex" href="../" rel="internal">Home</a>
+                        <a class="button-alex" href="../pages/ubc-bosch-guide" rel="internal">UBC
+                                Interns
+                                Bosch
+                                Guide</a>
+                        <div href="#" class="dropdown button-alex">
+                                <button class="dropbtn">Personal Projects
+                                        <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div href="#" class="dropdown-content">
+                                        <a href="../pages/personal-project-TheArena">The Arena</a>
+                                        <a href="../pages/personal-project-level">Level</a>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="core">
+                <div class="divSeparation"
+                        style="background-image: linear-gradient(to right top, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);">
+                        <h1 style="text-align: center; padding-bottom: 30px;" id="Level">The Arena</h1>
+
+                        <p>Level is a puzzle game. The player act on the environment to move a ball, collect tokens and
+                                advance through 3 different levels.</p>
+                        <p>The player can use 3 different skills: move, jump and attack. The victory condition is to
+                                collect all tokens and/or defeat enemies and then access the exit. The failure condition
+                                is either losing all hps or falling off ground.</p>
+                        <p>Three different levels are currently available. The first level aims to teach the movement
+                                mechanic. The second level aims to teach the jump mechanic. The third level introduce
+                                the health and the attack mechanics with a small mini-boss at the end.</p>
+                        <p>The game mechanics are simple as I wanted to focus on the level design to provide the player
+                                a unique experience. The game can still be improved with nearly infinite possibility of
+                                level creation.</p>
+                        <p>In this post, I will explain the creation process of the game. How the idea came, what I
+                                wanted to achieve and what challenges I faced.</p>
+                </div>
+                <div class="divSeparation marginTop"
+                        style="background-image: linear-gradient(to right top, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);">
+                        <h2 id="Level">Table Of Content</h2>
+                        <div class="row">
+                                <p></p>
+                                <div class="content-column one_half"><a href="#History">History</a><br>
+                                        <a href="#Design">Design: Goals</a><br>
+                                        <a href="#DesignEarly">Design: Early-Stage – Prototypes</a><br>
+                                        <a href="#DesignEarlyHard">Design: Early-Stage – Hardest Challenge to
+                                                solve</a><br>
+                                        <a href="#DesignMid">Design: Mid-Stage</a><br>
+                                        <a href="#DesignMidRet"> Design: Mid-Stage – Retrospection</a><br>
+                                        <a href="#Conclusion">Project: Conclusion</a><br></div><br>
+                                <div class="content-column one_half last_column">
+                                        <div class="center-button"><a style="float:right;" class="button-alex"
+                                                        href="https://alexandreguichet.itch.io/level">Download</a></div>
+                                        <div class="center-button"><a class="button-alex"
+                                                        href="https://github.com/SaladedePoney/Level">GitHub</a></div>
+                                </div>
+                                <div class="clear_column"></div>
+                                <p></p>
+                        </div>
+                </div><br>
+                <div style="max-width: 1440px; margin: auto;">
+                        <img class="aligncenter featured-image"
+                                src="../assets/images/Video Game Projects/Level-Website.jpg">
+                </div>
+
+                <div class="divSeparation marginTop"
+                        style="background-image: linear-gradient(to right top, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);">
+                        <h2 id="History">History</h2>
+                        <p>The creation of this game started two years ago. I studied Level Design through games and
+                                books and I
+                                remember being amazed by a simple concept. It came from the online book “The How’s and
+                                Why’s of
+                                Level Design” by Sjoerd “Hourence” de Jong:</p>
+                        <p style="text-align: center;"><strong>"The utilisation of computers is not intuitive to humans.
+                                        We must
+                                        learn how to use it."</strong></p>
+                        <p>I came to realisation that it was true: all games, no matter what they are, have a tutorial
+                                to
+                                introduce the player to the game mechanics. All informatics tools have their own
+                                tutorial,
+                                documentation, etc…</p>
+                        <p>I wanted to know if it was possible to create a game intuitive enough that someone can play
+                                it
+                                naturally without being frustrated (I consider that games like “Mario Bros” achieved
+                                this
+                                objective).</p>
+                        <p>This was the beginning of the design of “Level”.</p>
+                </div>
+                <div class="divSeparation marginTop"
+                        style="background-image: linear-gradient(to right top, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);">
+                        <h2 id="Design">Design (Goals):</h2>
+                        <p>As a beginner Level Designer, I was clueless on how to design a game. I decided to create
+                                some
+                                precepts that I will follow:</p>
+                        <p>– Stay simple: I wanted the game to be intuitive. That anyone can beat it without me teaching
+                                them
+                                the mechanics.<br>
+                                – Force the player to use the all mechanics: It would be a wasted to introduce a new
+                                mechanic
+                                and neve use it again/don’t use it at all.</p>
+                        <p>Both were my main headlines when designing the game.</p>
+                        <p>Then I decided the main mechanic of the game: move the ball by tilting the ground. It will
+                                allow the
+                                ball to move thought the world. It is the most important mechanic of the game, its core.
+                        </p>
+                </div>
+                <div class="divSeparation marginTop"
+                        style="background-image: linear-gradient(to right top, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);">
+                        <h2 id="DesignEarly">Design (Early-Stage – Prototypes):</h2>
+                        <p>I was unfamiliar with the way unity manages physics. I only worked with tutorials and 2D
+                                projects
+                                before.</p>
+                        <p>I then imagined the behaviour of the ball relative to the ground I was aiming for. I wanted
+                                to ball
+                                to be easily movable. That if the player made a mistake, he/she can recover controls
+                                easily.
+                                Therefore, I decided the ball to have a small initial acceleration and a late terminal
+                                velocity.
+                        </p>
+                        <p>It was time to experiment with the ball’s Rigidbody and gravity.<br>
+                        </p>
+                        <div class="content-column one_half">I came to design my first prototype: a ball in free fall
+                                without
+                                any commands.<p></p>
+                                <p>I wanted to understand how the velocity component worked, it’s proprieties, and how
+                                        we can
+                                        impact that with collisions.</p>
+                                <p>I played around with the weight of the ball and the gravity to find a good ball
+                                        acceleration
+                                        relative to an angle. I was aiming the ball to get 4 velocity (magnitude) from a
+                                        resting
+                                        position on a plane angle of 10 degrees before 5sec. Why these values? because I
+                                        needed
+                                        a reference for the game. I wanted to have a “feel” of it and then adjust on
+                                        what I
+                                        thought would be good.<br></p>
+                        </div>
+                        <div class="content-column one_half last_column">
+                                <figure id="attachment_150" style="width: 300px" class="wp-caption aligncenter"><img
+                                                class="wp-image-150 size-medium"
+                                                src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 11.49.13.png"
+                                                alt="" width="300" height="242">
+                                        <figcaption class="wp-caption-text">First Prototype of level – the ball falls
+                                        </figcaption>
+                                </figure>
+                        </div>
+                        <div class="clear_column"></div>
+                        <p></p>
+                        <figure id="attachment_152" style="width: 1024px" class="wp-caption aligncenter"><img
+                                        class="size-large wp-image-152"
+                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 11.54.43.png"
+                                        alt="" width="1024" height="162">
+                                <figcaption class="wp-caption-text">Velocity Calculations for the first prototype
+                                </figcaption>
+                        </figure>
+                        <p>At this stage of the prototype, I realised that once the ball collides with a wall it stops
+                                in the
+                                wall and doesn’t move afterwards. I understood that bouncing back from the wall wasn’t a
+                                physic
+                                from the Rigidbody (or the material?). I explored a way to make the ball bounce with
+                                another
+                                prototype.<br>
+                        </p>
+                        <div class="content-column one_half">I did experiment with a 2nd prototype.<br>
+                                The solution I found (and that satisfied me) was to calculate the velocity before
+                                impact,
+                                reverse it and add it to the ball with the AddForce function. It was nice but not
+                                optimal as
+                                this method didn’t return the angles.<br></div>
+                        <div class="content-column one_half last_column">
+                                <figure id="attachment_153" style="width: 150px" class="wp-caption aligncenter"><img
+                                                class="size-thumbnail wp-image-153"
+                                                src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 12.22.08.png"
+                                                alt="" width="150" height="150">
+                                        <figcaption class="wp-caption-text">Level – 2nd prototype</figcaption>
+                                </figure>
+                        </div>
+                        <div class="clear_column"></div><br>
+                        I had to perform vector calculations to find the new angle:<br>
+                        <div class="content-column one_half">
+                                <div style="padding-right:10px;padding-left:10px;">
+                                        <figure id="attachment_155" style="width: 300px" class="wp-caption aligncenter">
+                                                <img class="size-medium wp-image-155"
+                                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 12.33.55.png"
+                                                        alt="" width="300" height="182">
+                                                <figcaption class="wp-caption-text">Wrong way to Bounce back
+                                                </figcaption>
+                                        </figure>
+                                </div>
+                        </div>
+                        <div class="content-column one_half last_column">
+                                <div style="padding-right:10px;padding-left:10px;">
+                                        <figure id="attachment_156" style="width: 300px" class="wp-caption aligncenter">
+                                                <img class="size-medium wp-image-156"
+                                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 12.42.24.png"
+                                                        alt="" width="300" height="157">
+                                                <figcaption class="wp-caption-text">Right way to Bounce back.
+                                                </figcaption>
+                                        </figure>
+                                </div>
+                        </div>
+                        <div class="clear_column"></div><br>
+                        Once the ground and walls were fully operational. The behaviour of the ball seemed “natural”. I
+                        then
+                        started creating the game.<p></p>
+                </div>
+                <div class="divSeparation marginTop"
+                        style="background-image: linear-gradient(to right top, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);">
+                        <h2 id="DesignEarlyHard">Design (Early-Stage – Hardest Challenge to solve):</h2>
+                        <p>One of the hardest challenges I had to solve is the problem linked to the plane moving.<br>
+                                Because the Update() function update itself every frame, the vertical displacement of
+                                the plane,
+                                made with a Quaternion.Slerp (lerp from a point a to b by a displacement t), is
+                                dependant of the
+                                SIZE of planes.</p>
+                        <p>Let me explain: if the displacement of the plane per frame is less than the size of the
+                                ball’s
+                                collider, the ball will follow the plane such as bellow:</p>
+                        <figure id="attachment_158" style="width: 1024px" class="wp-caption aligncenter"><img
+                                        class="size-large wp-image-158"
+                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 14.35.11.png"
+                                        alt="" width="1024" height="375">
+                                <figcaption class="wp-caption-text">Tilting of a 5 unit long plane with ball on top
+                                </figcaption>
+                        </figure>
+                        <p>If the plane is too big, the displacement per frame increases. If it becomes bigger than the
+                                ball
+                                collider, the ball doesn’t follow the plane and falls.</p>
+                        <figure id="attachment_159" style="width: 1024px" class="wp-caption aligncenter"><img
+                                        class="size-large wp-image-159"
+                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 14.38.34.png"
+                                        alt="" width="1024" height="286">
+                                <figcaption class="wp-caption-text">Tilting of a 10 unit long plane with ball on top
+                                </figcaption>
+                        </figure>
+                        <p>It becomes really tricky when the Player goes close to an end and then quickly switch between
+                                tilting
+                                left and tilting right. The displacement becomes even bigger:</p>
+                        <figure id="attachment_160" style="width: 1024px" class="wp-caption aligncenter"><img
+                                        class="size-large wp-image-160"
+                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 14.42.16.png"
+                                        alt="" width="1024" height="358">
+                                <figcaption class="wp-caption-text">Tilting left to right of a 10 unit long plane with
+                                        ball on
+                                        top</figcaption>
+                        </figure>
+                        <p>Same applies when you jump really close to a plane’s edge. The plane will reset to Quaternion
+                                identity as the ball will exit the plane’s collider. The player will most likely keep
+                                the button
+                                pushed down, resulting to a similar situation. The player will sometimes fall off
+                                ground.</p>
+                        <p>To solve this, I had no choice but to limit the plane length, limit the maximum rotation of
+                                planes
+                                and increase the refresh rate of the physics calculation.</p>
+                        <p>This explains why the long path in the Level 0-2 is a succession of small planes instead of a
+                                long
+                                unique one.</p>
+                        <figure id="attachment_161" style="width: 1024px" class="wp-caption aligncenter"><img
+                                        class="size-large wp-image-161"
+                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 15.14.09.png"
+                                        alt="" width="1024" height="367">
+                                <figcaption class="wp-caption-text">Level 0-2 view from top with added colour
+                                </figcaption>
+                        </figure>
+                </div>
+                <div class="divSeparation marginTop"
+                        style="background-image: linear-gradient(to right top, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);">
+                        <h2 id="DesignMid">Design (Mid-Stage):</h2>
+                        <p>Going back to my core objectives, I wanted to have a simple game. Now that I have my
+                                mechanics ready
+                                (and intuitive as possible), I needed a way to force the player to use them. I wanted
+                                them to
+                                play without any tutorials.</p>
+                        <p>To do so, I decided to Add instructions in the world telling them what they needed to do.</p>
+                        <p>I created panels with “exit” or “jump” written.<br>
+                        </p>
+                        <div class="content-column one_half">
+                                <div style="padding-right:10px;padding-left:10px;">
+                                        <figure id="attachment_163" style="width: 1024px"
+                                                class="wp-caption aligncenter"><img class="size-large wp-image-163"
+                                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 14.09.58.png"
+                                                        alt="" width="1024" height="714">
+                                                <figcaption class="wp-caption-text">Exit Panel</figcaption>
+                                        </figure>
+                                </div>
+                        </div>
+                        <div class="content-column one_half last_column">
+                                <div style="padding-right:10px;padding-left:10px;">
+                                        <figure id="attachment_164" style="width: 364px" class="wp-caption aligncenter">
+                                                <img class="size-full wp-image-164"
+                                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 14.10.28.png"
+                                                        alt="" width="364" height="556">
+                                                <figcaption class="wp-caption-text">Jump Panel</figcaption>
+                                        </figure>
+                                </div>
+                        </div>
+                        <div class="clear_column"></div>
+                        <p></p>
+                        <p>I wanted to force the player to try things without teaching them the exact way to do it.<br>
+                                I made sure that the keys were the same as almost every game: “aswd” to move and “space”
+                                to
+                                jump. I hoped that these keys were intuitive enough to people.</p>
+                        <p>I also added rotation and sound to tokens. I wanted to encourage the player to be curious and
+                                go
+                                toward them, then realise they needed to collect them with the text on top-right corner.
+                        </p>
+                        <figure id="attachment_165" style="width: 1024px" class="wp-caption aligncenter"><img
+                                        class="size-large wp-image-165"
+                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 14.16.03.png"
+                                        alt="" width="1024" height="533">
+                                <figcaption class="wp-caption-text">The token collected appears on the top-right corner
+                                </figcaption>
+                        </figure>
+                        <p>There is a different animation to the exit when it is ready to use and the colour of the
+                                ground
+                                indicates which platform you can or cannot move.</p>
+                        <p>Levels are designed to:</p>
+                        <p>– The first level’s aim is to teach the “collect token”, “exit” and moving to different plane
+                                mechanic (the core gameplay).<br>
+                                – The second a “jump” and “falling off ground” tutorial.<br>
+                                – The third one introduces the health mechanic and the attack.</p>
+                </div>
+                <div class="divSeparation marginTop"
+                        style="background-image: linear-gradient(to right top, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);">
+                        <h2 id="DesignMidRet">Design (Mid-Stage – Retrospection):</h2>
+                        <p>I thought everything was intuitive enough and made sense in term of design that anyone can
+                                understand
+                                the game without tutorial. And have fun with it.</p>
+                        <p>I never was so wrong… I tested this game with many people, both gamers and non-gamers. None
+                                could
+                                understand how to play it without my help (and without frustration). The only noticeable
+                                difference was that gamers were learning faster than non-gamers.</p>
+                        <p>The most common errors I saw were:</p>
+                        <p>– Changing platforms: (~70% of about 15 people) had trouble understanding that the velocity
+                                of the
+                                ball carries even if the plane is not tilted. This is the first requirement to move
+                                plane and a
+                                lot of people stayed stuck in between like below.</p>
+                        <figure id="attachment_166" style="width: 1024px" class="wp-caption aligncenter"><img
+                                        class="size-large wp-image-166"
+                                        src="../assets/images/Video Game Projects/Screen Shot 2018-07-26 at 14.23.49.png"
+                                        alt="" width="1024" height="478">
+                                <figcaption class="wp-caption-text">The ball is stuck between the planes without jump
+                                        possibility</figcaption>
+                        </figure>
+                        <p>– Jump mechanic: the jump (like the bouncing from walls) carry your actual velocity. It means
+                                that if
+                                we jump without velocity, the ball will stay idle. Lot of people (mostly non-gamers) had
+                                trouble
+                                understanding that they needed to build velocity before jumping.</p>
+                        <p>Most non-gamers kept repeating the same action when it didn’t work. “It didn’t work last time
+                                but it
+                                might this time”. I witnessed people trying to force a jump without velocity over 10
+                                times in a
+                                raw, not searching for a different way to solve the puzzle.</p>
+                        <p>On the other side, gamers kept trying new techniques. “It didn’t work if I keep pressing this
+                                button,
+                                let’s try to jump this time”. They ultimately got the answer at the end.</p>
+                        <p>I am sure that this is one of the main impacts of video games on people: They train us to
+                                explore
+                                every option available from the gameplay to advance through the level. Gamers adapts
+                                faster. If
+                                something doesn’t work once, or twice… it won’t work at all.</p>
+                        <p>That, sadly, doesn’t apply to the gameplay’s learning process. Everyone needs to be thought
+                                the tools
+                                to play the game first before thinking of different situation to apply it. It will be
+                                hard (and
+                                frustrating) to find the good tools alone, then apply them.</p>
+                </div>
+                <div class="divSeparation marginTop"
+                        style="background-image: linear-gradient(to right top, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);">
+                        <h2 id="Conclusion">Project: Conclusion</h2>
+                        <p>This project was supposed to be about Level Design (which explains the name “Level”). I
+                                wanted a Game
+                                Design as simple as possible so the Level will bring the difficulty, the unexpected and
+                                the fun.
+                        </p>
+                        <p>I was aiming to teach mechanics slowly, that once I introduce a new one I am sure that the
+                                player
+                                already masters the previous one. The Player could solve puzzles differently using the
+                                skill set
+                                as they wished (jump above lasers, or roll when it’s safe to do so, etc…).</p>
+                        <p>I learnt a lot about problem solving, and also understood I couldn’t solve everything
+                                perfectly. I
+                                had to compromise with the level’s design to make sure it fits the core design
+                                perfectly.</p>
+                        <p>This project’s foundation is now complete. The puzzles can be created very easily, new
+                                enemies with
+                                different mechanics can be implemented and the game can now grow into a bigger, funnier
+                                version
+                                of itself. I might as well create a small story now… How about we go save a princess ;)?
+                        </p>
+                        <p>Thank you for playing!</p>
+                        <p>Cheers,<br>
+                                Alexandre<br>
+                                <br>
+                        </p>
+                </div>
+        </div>
+</body>
+
+</html>
